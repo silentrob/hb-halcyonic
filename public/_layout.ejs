@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic 3.0 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Halcyonic by HTML5 UP</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+	</head>
+
+	<% var className = (current.source != 'index') ? "subpage" : "" %>	
+	<body class="<%- className %>">
+
+		<!-- Header -->
+		<%- partial("_shared/header") %>
+
+		<%- yield %>
+
+		<!-- Footer -->
+		<%- partial("_shared/footer") %>
+
+	</body>
+</html>

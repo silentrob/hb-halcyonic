@@ -1,0 +1,42 @@
+<div id="header-wrapper">
+	<header id="header" class="container">
+		<div class="row">
+			<div class="12u">
+			
+				<!-- Logo -->
+					<h1><a href="#" id="logo">Halcyonic</a></h1>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="/index">Homepage</a>
+						<a href="/threecolumn">Three Column</a>
+						<a href="/twocolumn1">Two Column #1</a>
+						<a href="/twocolumn2">Two Column #2</a>
+						<a href="/onecolumn">One Column</a>
+					</nav>
+
+			</div>
+		</div>
+	</header>
+	<% if (current.source == "index") { %>
+		<div id="banner">
+			<div class="container">
+				<div class="row">
+					<div class="6u">
+					
+						<!-- Banner Copy -->
+							<p>We do something really useful, important, and unique. Learn all about it here ...</p>
+							<a href="#" class="button-big">Go on, click me!</a>
+
+					</div>
+					<div class="6u">
+						
+						<!-- Banner Image -->
+							<a href="#" class="bordered-feature-image"><img src="images/banner.jpg" alt="" /></a>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	<% } %>
+</div>
